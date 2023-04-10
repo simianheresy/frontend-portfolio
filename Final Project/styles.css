@@ -1,0 +1,550 @@
+/* Global */
+
+body {
+  margin: 0;
+  font-family: "Gloock", serif;
+  /* font-family: 'Quicksand', sans-serif; */
+}
+
+/* Font Sizing and Coloring */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.052rem;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.441rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.953rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.563rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: "Merriweather", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+a:visited {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+/* Subscribe Page CSS */
+.subscribe {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.subscribe h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.subscribe label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.subscribe input[type="email"] {
+  font-family: "Merriweather", serif;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.subscribe button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Merriweather", serif;
+}
+
+.subscribe button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.subscribe .interests {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subscribe .interests label {
+  margin-right: 10px;
+  font-family: "Merriweather", serif;
+}
+
+.subscribe .interests input[type="checkbox"] {
+  margin-right: 5px;
+}
+/* Header */
+header {
+  padding-left: 12%;
+  padding-right: 12%;
+  background-color: rgb(90, 45, 17);
+}
+#headbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+  width: 100%;
+  border-bottom: 1px solid #e7bc5f;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#subscribe a {
+  text-decoration: none;
+  color: #e7bc5f;
+}
+#subscribe a:visited {
+  text-decoration: none;
+  color: #e7bc5f;
+}
+#subscribe a:hover {
+  color: rgb(104, 157, 104);
+  transition: color 0.3s ease;
+}
+#subscribe a:not(:hover) {
+  color: #e7bc5f;
+  transition: color 0.3s ease;
+}
+#title a {
+  text-decoration: underline;
+  color: #e7bc5f;
+  font-size: 1.953rem;
+}
+#title a:visited {
+  text-decoration: none;
+  color: #e7bc5f;
+}
+#title a:hover {
+  color: rgb(104, 157, 104);
+  transition: color 0.3s ease;
+}
+#title a:not(:hover) {
+  color: #e7bc5f;
+  transition: color 0.3s ease;
+}
+#other a {
+  text-decoration: none;
+  color: #e7bc5f;
+}
+#other a:visited {
+  text-decoration: none;
+  color: #e7bc5f;
+}
+#other a:hover {
+  color: rgb(104, 157, 104);
+  transition: color 0.3s ease;
+}
+#other a:not(:hover) {
+  color: #e7bc5f;
+  transition: color 0.3s ease;
+}
+
+/* Nav */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 16px;
+}
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #e7bc5f;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 16px;
+}
+nav li a:visited {
+  color: #e7bc5f;
+}
+nav li a:hover {
+  color: #212121;
+  background-color: #e7bc5f;
+  transition: background-color 0.6s ease;
+}
+nav li a:not(:hover) {
+  background-color: none;
+  transition: background-color 0.3s ease;
+}
+  nav#desktop {
+    display: block;
+  }
+@media only screen and (max-width: 768px) {
+  nav#desktop {
+    display: none;
+  }
+}
+/* Mobile Nav */
+nav#mobile {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+nav#mobile a  {
+  font-size: 2.5vh;
+  padding-top: 24px;
+
+}
+
+nav#mobile ul {
+  display: flex;
+  list-style: none;
+  margin-top: 24px;
+}
+
+nav#mobile ul li {
+  margin-right: 20px;
+}
+nav#mobile ul li a  {
+  font-size: 2vw;
+}
+nav#mobile ul li:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 768px) {
+  header  {
+    margin: 0;
+    padding: 0;
+  }
+  nav#mobile {
+    display: flex;
+  }
+  #title  {
+    text-align: center;
+  }
+}
+/* Tools */
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.textbite {
+  border-right: 2px solid #d9d9d9;
+  padding: 0;
+  margin-bottom: 16px;
+
+}
+.textbite:last-child {
+  border: none;
+}.hiddenwdt {
+  display: none;
+}
+.textbite p {
+  margin:0;
+}
+@media only screen and (max-width: 768px) {
+  .hiddenwdt {
+    display: block;
+  }
+}
+/* Story Block Styling: This is the rectangle that headlines sit inside*/
+div.StoryBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  padding-top: 24px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Story Headlines */
+div.storyTitle {
+  font-style: italic;
+}
+div.readMore {
+  text-decoration: underline;
+  color: #ffffff;
+}
+p.storyDate {
+  color: #ffffff;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  div.storySubtext p {
+    display: none;
+  }
+  div.readMore {
+    display: none;
+  }
+}
+
+/* Featured Headline */
+div.featuredHeadline {
+  background-color: #212121;
+  background-image: linear-gradient(to right, rgb(104, 157, 104, 1), rgb(98, 0, 255, 0)), url(images/headline.jpg);
+  background-size: cover;
+  padding-left: 6%;
+}
+div.featuredHeadline div.storyTitle {
+  width: 50%;
+}
+@media only screen and (max-width: 1080px) {
+  div.featuredHeadline div.storyTitle {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.featuredHeadline div.storyTitle h1 {
+    font-size: 4vh;
+  }
+  div.featuredHeadline {
+    padding: 12px;
+  }
+}
+div.featuredHeadline div.storySubtext p {
+  width: 50%;
+  font-style: bold;
+  color: #ffffff;
+  margin-top: 8px;
+  padding-left: 2%;
+}
+div.featuredHeadline div.readMore {
+  margin-left: 1.2%;
+}
+
+/* For the first split headline at the top of the page */
+div.headline1 {
+  background-color: #212121;
+  background-image: linear-gradient(to right, rgb(183, 62, 28), rgb(98, 0, 255, 0)), url(images/firestory.jpg);
+  background-size: cover;
+  color: #ffffff;
+}
+div.headline1 div.storyTitle {
+  width: 50%;
+}
+@media only screen and (max-width: 1160px) {
+  div.headline1 div.storyTitle {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.headline1 div.storyTitle h2 {
+    font-size: 4vh;
+  }
+}
+div.headline1 div.storySubtext p {
+  width: 50%;
+  font-style: bold;
+  color: #ffffff;
+  margin-top: 8px;
+  padding-left: 1%;
+}
+div.headline1 div.readMore {
+  margin-left: 0.8%;
+}
+
+/* For the second split headline at the top of the page */
+div.headline2 {
+  background-color: #212121;
+  background-image: linear-gradient(to right, rgb(85, 131, 184), rgb(98, 0, 255, 0)), url(images/bugstory.jpg);
+  background-size: cover;
+  color: #ffffff;
+}
+div.headline2 div.storyTitle {
+  width: 50%;
+}
+@media only screen and (max-width: 1160px) {
+  div.headline2 div.storyTitle {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.headline2 div.storyTitle h2 {
+    font-size: 4vh;
+  }
+}
+div.headline2 div.storySubtext p {
+  width: 50%;
+  font-style: bold;
+  color: #ffffff;
+  margin-top: 8px;
+  padding-left: 1%;
+}
+div.headline2 div.readMore {
+  margin-left: 0.8%;
+}
+
+/* Headline 4, next to list */
+div.headline4 {
+  background-color: #212121;
+  background-image: linear-gradient(to right, rgb(140, 85, 184), rgb(98, 0, 255, 0)), url(images/hike3.jpg);
+  background-size: cover;
+  color: #ffffff;
+}
+div.headline4 div.storyTitle {
+  width: 70%;
+}
+@media only screen and (max-width: 1160px) {
+  div.headline4 div.storyTitle {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.headline4 div.storyTitle h2 {
+    font-size: 4vh;
+  }
+}
+div.headline4 div.storySubtext p {
+  width: 50%;
+  font-style: bold;
+  color: #ffffff;
+  margin-top: 8px;
+  padding-left: 1%;
+}
+div.headline4 div.readMore {
+  margin-left: 0.8%;
+}
+
+/* Headline 5 */
+div.headline5 {
+  background-color: #212121;
+  background-image: linear-gradient(to right, rgb(170, 120, 3), rgb(98, 0, 255, 0)), url(images/climbingstory.jpg);
+  background-size: cover;
+  color: #ffffff;
+  margin-left: 4px;
+  margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.headline5 div.storyTitle h2 {
+  font-size: 2vw;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  div.headline5 div.storyTitle h2 {
+    font-size: 4vh;
+  }
+}
+div.headline5 div.storySubtext p {
+  width: 50%;
+  font-style: bold;
+  color: #ffffff;
+  margin-top: 8px;
+  padding-left: 1%;
+}
+div.headline5 div.readMore {
+  margin-left: 0.8%;
+}
+
+/* Top Trips CSS */
+div.tripContainer {
+  border-left: 2px solid #d9d9d9;
+  margin-bottom: 12px;
+}
+div.tripContainer ol li a {
+  color: #000000;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  div.tripContainer {
+    border: none;
+  }
+}
+/* populartrips */
+.StoryBlock h3 {
+  color: #ffffff;
+}
+/* article */
+div.articles p {
+  margin-bottom: 0;
+  text-indent: 1.5em;
+  font-family: "Merriweather", serif;
+}
+/* IMG Article */
+img.articleImg {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+@media only screen and(max-width:768px) {
+  img.articleImg {
+    width: 100%;
+    float: none;
+  }
+}
+/* Extra Presentation */
+div.StoryBlock:hover {
+  box-shadow: 20px 20px 1000px 10px #e7bc5f inset;
+  transition: box-shadow 0.33s;
+}
+div.StoryBlock:not(:hover) {
+  box-shadow: none;
+  transition: box-shadow 1s;
+}
+/* RWD Stuff */
+@media only screen and (max-width: 768px) {
+  #subscribe,
+  #other {
+    display: none;
+  }
+}
+@media only screen and (max-width: 464px) {
+  #title a {
+    font-size: 6vw;
+  }
+}
+/* Bootstrap Edits/Testing*/
+.container {
+  width: auto;
+  padding-top: 12px;
+  margin-left: 12%;
+  margin-right: 12%;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+.RED {
+  background-color: lightcoral;
+}
+
+.BLUE {
+  background-color: lightblue;
+}
+
+.GREEN {
+  background-color: lightgreen;
+}
